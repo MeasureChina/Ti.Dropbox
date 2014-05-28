@@ -46,7 +46,7 @@ public class DropboxModule extends KrollModule
 	
 	private static final String DROPBOX_PACKAGE_NAME = "com.dropbox.android";
 	
-    static final String APP_KEY = "YOUR_APP_KEY";
+    static final String APP_KEY = "gyxfr6yx3ia4r7m";
     static final int DBX_CHOOSER_REQUEST = 0;  // You can change this if needed
 	
 	private DbxChooser mChooser;
@@ -119,9 +119,12 @@ public class DropboxModule extends KrollModule
 				event.put("icon", result.getIcon().toString());
 
 				Map<String, Uri> thumbs = result.getThumbnails();
-				event.put("thumb64", thumbs.get("64x64").toString());
-				event.put("thumb200", thumbs.get("200x200").toString());
-				event.put("thumb640", thumbs.get("640x480").toString());
+				
+				if (thumbs.get("64x64") != null) {
+					event.put("thumb64", thumbs.get("64x64").toString());
+					event.put("thumb200", thumbs.get("200x200").toString());
+					event.put("thumb640", thumbs.get("640x480").toString());
+				}
 		
 				Log.d(TAG, event.toString());
 		
