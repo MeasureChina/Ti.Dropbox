@@ -46,7 +46,7 @@ public class DropboxModule extends KrollModule
 	
 	private static final String DROPBOX_PACKAGE_NAME = "com.dropbox.android";
 	
-    static final String APP_KEY = "gyxfr6yx3ia4r7m";
+    static final String APP_KEY = "YOUR_APP_KEY";
     static final int DBX_CHOOSER_REQUEST = 0;  // You can change this if needed
 	
 	private DbxChooser mChooser;
