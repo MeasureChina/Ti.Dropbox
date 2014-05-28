@@ -1,0 +1,4 @@
+titanium.platform=/Users/Library/Application Support/Titanium/mobilesdk/osx/3.2.3.GA/android
+android.platform=/Users/android-sdk-macosx/platforms/android-11
+google.apis=/Users/android-sdk-macosx/add-ons/addon-google_apis-google-11
+android.ndk=/Users/android-ndk-r8b
